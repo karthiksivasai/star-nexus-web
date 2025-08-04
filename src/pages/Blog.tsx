@@ -148,11 +148,11 @@ const Blog = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-b from-[#f9fafc] to-white">
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-background via-muted/30 to-background">
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-100 via-indigo-50 to-white">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
             Industry <span className="text-gradient-primary">Insights</span> & Updates
@@ -174,8 +174,11 @@ const Blog = () => {
         </div>
       </section>
 
+      {/* Section Separator */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      
       {/* Filter Categories */}
-      <section className="py-8 px-4 border-b border-border">
+      <section className="py-12 px-4 bg-gradient-to-b from-white to-[#f9fafc]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap gap-2 justify-center">
             {categories.map((category) => {
@@ -202,9 +205,12 @@ const Blog = () => {
         </div>
       </section>
 
+      {/* Section Separator */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      
       {/* Featured Post */}
       {featuredPost && (
-        <section className="py-16 px-4">
+        <section className="py-20 px-4 bg-[#f6f8fd]">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-8">
               <Badge className="mb-4" variant="outline">Featured Article</Badge>
@@ -263,9 +269,12 @@ const Blog = () => {
         </section>
       )}
 
+      {/* Section Separator */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      
       {/* Blog Posts Grid */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 bg-gradient-to-r from-indigo-50 via-white to-sky-50">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-foreground">Latest Articles</h2>
             <p className="text-muted-foreground">
@@ -348,9 +357,12 @@ const Blog = () => {
         </div>
       </section>
 
+      {/* Section Separator */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      
       {/* Newsletter Signup */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="py-20 bg-gradient-to-tr from-cyan-100 via-white to-violet-100">
+        <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-4 text-foreground">Stay Updated</h2>
           <p className="text-xl text-muted-foreground mb-8">
             Subscribe to our newsletter for the latest insights, tips, and industry updates.

@@ -38,7 +38,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative overflow-hidden bg-card border-t border-border">
+    <footer className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white border-t border-gray-200">
       {/* CTA Banner */}
       <div className="relative py-16 bg-gradient-to-r from-primary via-primary-glow to-secondary overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />

@@ -50,10 +50,7 @@ const BlogPreview = () => {
   };
 
   return (
-    <section id="blog" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-card/20 to-background" />
-      
-      <div className="container mx-auto px-6 relative z-10">
+    <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -189,8 +186,7 @@ const BlogPreview = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+    </div>
   );
 };
 

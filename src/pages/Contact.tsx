@@ -112,11 +112,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-b from-[#f9fafc] to-white">
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-background via-muted/30 to-background">
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-100 via-indigo-50 to-white">
         <div className="max-w-7xl mx-auto text-center">
           <Badge className="mb-4" variant="outline">Contact Us</Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
@@ -148,9 +148,12 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Section Separator */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      
       {/* Contact Methods */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 bg-gradient-to-b from-white to-[#f9fafc]">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-foreground">Get in Touch</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -186,9 +189,12 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Section Separator */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      
       {/* Contact Form & Office Info */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 bg-[#f6f8fd]">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
@@ -393,9 +399,12 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Section Separator */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      
       {/* FAQ Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="py-20 bg-gradient-to-r from-indigo-50 via-white to-sky-50">
+        <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-4 text-foreground">Frequently Asked Questions</h2>
           <p className="text-muted-foreground mb-8">
             Find quick answers to common questions about our services

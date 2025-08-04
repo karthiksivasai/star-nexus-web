@@ -88,8 +88,7 @@ const ServicesPreview = () => {
   };
 
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <Badge className="mb-4" variant="outline">Our Services</Badge>
@@ -224,8 +223,7 @@ const ServicesPreview = () => {
             <div className="text-muted-foreground">Response Time</div>
           </div>
         </div>
-      </div>
-    </section>
+    </div>
   );
 };
 

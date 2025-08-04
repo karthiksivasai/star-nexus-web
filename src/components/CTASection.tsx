@@ -10,11 +10,7 @@ const CTASection = () => {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background with gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10" />
-      <div className="absolute inset-0 bg-gradient-hero opacity-50" />
-      
+    <div className="relative overflow-hidden">      
       {/* Floating shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 left-10 w-32 h-32 bg-primary/5 rounded-full animate-float" />
@@ -135,7 +131,7 @@ const CTASection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

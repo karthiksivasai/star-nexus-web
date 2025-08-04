@@ -134,11 +134,11 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-b from-[#f9fafc] to-white">
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-background via-muted/30 to-background">
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-100 via-indigo-50 to-white">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
             Our <span className="text-gradient-primary">Professional</span> Services
@@ -157,9 +157,12 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Section Separator */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      
       {/* Service Categories */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 bg-gradient-to-b from-white to-[#f9fafc]">
+        <div className="max-w-7xl mx-auto px-4">
           {/* Tab Navigation */}
           <div className="flex justify-center mb-12">
             <div className="bg-muted rounded-xl p-2 inline-flex">
@@ -253,9 +256,12 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Section Separator */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      
       {/* Why Choose Us */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 bg-[#f6f8fd]">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
               Why Choose Star Certifications?
@@ -299,9 +305,12 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Section Separator */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      
       {/* CTA Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="py-20 bg-gradient-to-tr from-cyan-100 via-white to-violet-100">
+        <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Ready to Get Started?
           </h2>

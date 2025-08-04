@@ -8,42 +8,42 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Light Professional Theme - Core Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
     
-    /* Brand Primary - Deep Blue */
+    /* Brand Primary - Professional Blue */
     --primary: 217 91% 60%;
     --primary-foreground: 0 0% 98%;
     --primary-glow: 217 100% 70%;
     
-    /* Brand Secondary - Elegant Purple */
-    --secondary: 262 83% 58%;
-    --secondary-foreground: 0 0% 98%;
+    /* Brand Secondary - Clean Gray */
+    --secondary: 210 40% 98%;
+    --secondary-foreground: 222.2 84% 4.9%;
     
-    /* Accent - Golden Yellow */
-    --accent: 45 93% 58%;
-    --accent-foreground: 222.2 84% 4.9%;
+    /* Accent - Corporate Indigo */
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 98%;
     
-    /* Surface Colors */
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --card-hover: 240 6% 10%;
+    /* Light Surface Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --card-hover: 210 40% 98%;
     
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
     
-    /* Muted Colors */
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    /* Light Muted Colors */
+    --muted: 210 40% 98%;
+    --muted-foreground: 215.4 16.3% 46.9%;
     
-    /* Border & Input */
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    /* Light Border & Input */
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
     --ring: 217 91% 60%;
     
     /* Status Colors */
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     
     --success: 142 76% 36%;
@@ -52,18 +52,18 @@
     --warning: 38 92% 50%;
     --warning-foreground: 222.2 84% 4.9%;
     
-    /* Gradients */
+    /* Light Professional Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(240 10% 8%) 50%, hsl(var(--background)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(240 6% 10%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--muted)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(210 40% 98%) 50%, hsl(var(--background)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(210 40% 98%) 100%);
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(var(--primary) / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -1px hsl(var(--primary) / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(var(--primary) / 0.1), 0 4px 6px -2px hsl(var(--primary) / 0.05);
-    --shadow-xl: 0 20px 25px -5px hsl(var(--primary) / 0.1), 0 10px 10px -5px hsl(var(--primary) / 0.04);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.15);
+    /* Light Professional Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.15);
     
     /* Layout */
     --radius: 0.75rem;
@@ -135,26 +135,34 @@
 }
 
 @layer components {
-  /* Premium Button Variants */
+  /* Modern Professional Button Variants */
   .btn-hero {
-    @apply bg-gradient-to-r from-primary via-primary-glow to-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-glow transition-all duration-300 hover:scale-105;
+    @apply bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:bg-primary/90;
   }
   
   .btn-outline-hero {
-    @apply border-2 border-primary text-primary bg-transparent px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 backdrop-blur-sm;
+    @apply border-2 border-primary text-primary bg-background px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-md hover:shadow-lg;
   }
   
   .btn-secondary {
-    @apply bg-gradient-to-r from-secondary to-accent text-secondary-foreground px-6 py-3 rounded-lg font-medium shadow-md hover:shadow-lg transition-all duration-300;
+    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300 hover:bg-muted border border-border;
   }
   
-  /* Premium Card Styles */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105;
+  }
+  
+  /* Modern Professional Card Styles */
   .card-premium {
-    @apply bg-gradient-to-br from-card to-card-hover border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2;
+    @apply bg-card border border-border rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1;
   }
   
   .card-service {
-    @apply bg-card/50 backdrop-blur-xl border border-border/50 rounded-xl p-6 hover:border-primary/30 transition-all duration-300;
+    @apply bg-card border border-border rounded-xl p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300 cursor-pointer hover:-translate-y-1;
+  }
+  
+  .card-clickable {
+    @apply bg-card border border-border rounded-xl p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300 cursor-pointer hover:-translate-y-1;
   }
   
   /* Text Gradients */
